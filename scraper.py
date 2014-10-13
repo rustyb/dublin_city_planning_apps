@@ -427,7 +427,9 @@ parser = SwiftLGParser("Dublin City", "DCC", "http://www.dublincity.ie/swiftlg/a
 #today = datetime.date.today()
 #today = datetime.date(2008, 9, 21)
 today = datetime.date.today()
+# 5 Years = 1826 days
+# 3 years = 1095
 #check the last 7 days for any new applications
-for i in range(7):
+for i in range(1095):
    day = today - datetime.timedelta(days=i)
    parser.saveResults(day.day, day.month, day.year)
